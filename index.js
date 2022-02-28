@@ -31,9 +31,9 @@ const voice = new aoijs.Voice(bot, {
   }, 
 });
 //Configs
-require('./handler/status')(bot) //This is for bot status file. 
-require('./handler/variables')(bot) //This is for bot variables file. 
-require('./handler/callbacks')(bot) //This is for bot callbacks file. 
+require('./handlers/status')(bot) //This is for bot status file. 
+require('./handlers/variables')(bot) //This is for bot variables file. 
+require('./handlers/callbacks')(bot) //This is for bot callbacks file. 
 
 
 //Loader would be better to used, since I don't recommend you code all your slash commands on your main file. If one command gives error, it will just kill your client. Your commands should be added on "commands" folder. 
