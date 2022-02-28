@@ -1,6 +1,6 @@
 //Setup
 
-/*This is for custom database, all you have to just create a cluster on mongoDB (Atlas) and then paste your cluster link to your secret as the key "CLUSTER", value is your url.
+
 
 const mongoose = require('mongoose')
 const mongo = require('dbdjs.mongo').default
@@ -11,7 +11,7 @@ mongoose.connect(process.env.CLUSTER, {
  keepAlive: true
 })
 
-mongo.createModel('main') */
+mongo.createModel('main') 
 
 //This is keep your bot alive 24/7 after connected to an uptimer service. Explained a little bit on server.js.
 const keepAlive = require('./server.js');
@@ -23,7 +23,7 @@ const fs = require('fs');
 
 const voice = new aoijs.Voice(bot, {
   soundcloud: {
-    clientId: "iZIs9mchVcX5lhVRyQGGAYlNPVldzAoX",
+    clientId: "",
   },//I recommend you to use your own sc token
   cache: {
     cacheType: "Memory",//Disk
